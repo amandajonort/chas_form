@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Gymmet</h1>
+  </header>
+  
+    <div class="gridcontainer">
+
+      <div class="textbox">
+        <h2>Vill du bli medlem och börja träna hos oss? </h2>
+         <h2 class="textcolor"> Fyll i formuläret så kontaktar vi dig snarast möjligt.</h2>
+      </div> <!-- slut på tetxbox-div -->
+
+      <div class="form">
+        <form action="https://httpbin.org/anything" method="post">
+          
+          <div class="namn">
+            <label for="name">Namn</label>
+            <input id="name" name="name" type="text" required/>
+          </div>
+
+          <div class="telefon">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" placeholder="070-1234567" pattern="[0-9]{3}-[0-9]{7}" required>
+          </div>  
+          <div class="email">
+            <label for="email">Epost</label>
+            <input id="email" name="email" type="email" />
+          </div>
+  
+          <div class="password">
+            <label for="pass">Lösenord</label>
+            <input id="pass" name="password" type="password" required />
+          </div>
+  
+          <div class="message">
+            <label for="message">Meddelande</label>
+            <textarea name="message" id="msg" maxlength="300"></textarea>
+          </div>
+  
+          <br>
+          <div class="medlemskap">Välj typ av medlemskap <br>
+          <input type="radio" id="Student" value="Student" name="medlemskap">
+          <label for="Student">Student</label>
+          <input type="radio" id="Vuxen" value="Vuxen" name="medlemskap">
+          <label for="Vuxen">Vuxen</label>
+          <input type="radio" id="pensionär" value="pensionär" name="medlemskap">
+          <label for="pensionär">Pensionär</label>
+          </div>
+
+          <br><br>
+          <div class="checkboxes">Vill du ha tillgång till både gym och gruppass?
+            <br>
+            <input type="checkbox" id="gym" name="gym/gruppass" value="gym">
+            <label for="gym">Gym</label>
+            <input type="checkbox" id="gruppass" name="gym/gruppass" value="gruppass">
+            <label for="gruppass">Gruppass</label>
+          </div>
+          <br><br>
+          <div class="send">
+            <button type="submit">Skicka</button>
+        </div> <!-- slut på button-div -->
+      </div> <!-- slut på form-div -->
+    </div> <!-- slut på container-div -->
+</body>
+</html>
